@@ -1,10 +1,10 @@
-# 🌍 Global Weather Trend Forecasting
+# Global Weather Trend Forecasting
 
 > **PM Accelerator Internship Program** — A complete, end-to-end data science project analyzing global weather data and forecasting temperature trends using machine learning.
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
 - [Project Overview](#-project-overview)
 - [Project Structure](#-project-structure)
@@ -19,7 +19,7 @@
 
 ---
 
-## 📊 Project Overview
+## Project Overview
 
 This project analyzes the **GlobalWeatherRepository** dataset — a rich collection of daily weather observations across cities worldwide — to:
 
@@ -32,7 +32,7 @@ The project follows an industry-standard data science workflow: from raw data in
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 
 ```
 weather-forecasting/
@@ -57,7 +57,7 @@ weather-forecasting/
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Category | Libraries |
 |---|---|
@@ -69,7 +69,7 @@ weather-forecasting/
 
 ---
 
-## 📦 Dataset
+## Dataset
 
 - **Source:** `GlobalWeatherRepository.csv`
 - **Records:** 130,198 observations
@@ -88,7 +88,7 @@ weather-forecasting/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
@@ -117,9 +117,9 @@ This will execute preprocessing → EDA → modeling → evaluation → advanced
 
 ---
 
-## 🔬 Pipeline Walkthrough
+## Pipeline Walkthrough
 
-### 🧹 1. Data Cleaning (`preprocessing.py`)
+### 1. Data Cleaning (`preprocessing.py`)
 
 | Step | Details |
 |---|---|
@@ -129,7 +129,7 @@ This will execute preprocessing → EDA → modeling → evaluation → advanced
 | Feature Engineering | Extracted `year`, `month`, `day`; created `temp_lag_1` lag feature |
 | Leakage Prevention | Dropped `temperature_fahrenheit`, `feels_like_*`, and string ID columns |
 
-### 📊 2. Exploratory Data Analysis (`eda.py`)
+### 2. Exploratory Data Analysis (`eda.py`)
 
 - **Temperature over time** — Global trend visualization highlighting seasonal variation
 - **Precipitation analysis** — Regional rainfall pattern differences
@@ -138,7 +138,7 @@ This will execute preprocessing → EDA → modeling → evaluation → advanced
 - **Monthly boxplot** — Seasonal patterns by calendar month
 - **Air Quality vs. Temperature** — Environmental impact analysis (r ≈ 0.05)
 
-### 🤖 3. Modeling (`models.py`)
+### 3. Modeling (`models.py`)
 
 See [Models Used](#-models-used) below.
 
@@ -146,14 +146,14 @@ See [Models Used](#-models-used) below.
 
 See [Evaluation Results](#-evaluation-results) below.
 
-### 🔥 5. Advanced Analysis (`advanced.py`)
+### 5. Advanced Analysis (`advanced.py`)
 
 - **Anomaly Detection** — Isolation Forest (contamination=1%) flagged **1,270** temperature anomalies
 - **Feature Importance** — XGBoost gain-based importance ranking of all features
 
 ---
 
-## 🤖 Models Used
+## Models Used
 
 ### ARIMA (AutoRegressive Integrated Moving Average)
 - Classical time-series forecasting model
@@ -167,7 +167,7 @@ See [Evaluation Results](#-evaluation-results) below.
 
 ---
 
-## 📈 Evaluation Results
+## Evaluation Results
 
 | Metric | Value | Interpretation |
 |---|---|---|
@@ -178,7 +178,7 @@ See [Evaluation Results](#-evaluation-results) below.
 
 ---
 
-## 🔑 Key Insights
+## Key Insights
 
 1. **UV Index is the #1 predictor** (26.5% feature importance) — solar radiation directly drives surface temperature.
 2. **Atmospheric pressure** is the 2nd most important feature (19.3%) — pressure systems define weather regimes.
@@ -187,15 +187,3 @@ See [Evaluation Results](#-evaluation-results) below.
 5. **Removing derived features prevents data leakage** — `temperature_fahrenheit` and `feels_like_*` were dropped to ensure honest model evaluation.
 6. **Isolation Forest detected 1,270 anomalies** — likely extreme weather events or data quality issues requiring further investigation.
 
----
-
-## 👤 Author
-
-**Riddhi Patel**
-PM Accelerator Internship Program
-
----
-
-## 📄 License
-
-This project is created for educational purposes as part of the PM Accelerator program.
