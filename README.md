@@ -4,21 +4,6 @@
 
 ---
 
-## Table of Contents
-
-- [Project Overview](#-project-overview)
-- [Project Structure](#-project-structure)
-- [Tech Stack](#-tech-stack)
-- [Dataset](#-dataset)
-- [Getting Started](#-getting-started)
-- [Pipeline Walkthrough](#-pipeline-walkthrough)
-- [Models Used](#-models-used)
-- [Evaluation Results](#-evaluation-results)
-- [Key Insights](#-key-insights)
-- [Author](#-author)
-
----
-
 ## Project Overview
 
 This project analyzes the **GlobalWeatherRepository** dataset — a rich collection of daily weather observations across cities worldwide — to:
