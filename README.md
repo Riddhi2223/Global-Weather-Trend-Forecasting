@@ -127,7 +127,7 @@ This will execute preprocessing → EDA → modeling → evaluation → advanced
 
 See [Models Used](#-models-used) below.
 
-### 📈 4. Evaluation (`evaluation.py`)
+### 4. Evaluation (`evaluation.py`)
 
 See [Evaluation Results](#-evaluation-results) below.
 
